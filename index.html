@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/math.css">
+    
+    <title>AREAS DE FIGURAS GEOMETRICAS</title>
+
+</head>
+<body>
+    <h1>HALLAR EL AREA</h1>
+    <img src="./image/Perímetros y Áreas de Figuras Planas.jpg" alt="">
+        <p >Tu respuesta es:</p>
+    <script>
+        let figura = prompt("Escribe que figura deseas utilizar: triangulo, rectángulo, paralelogramo, cuadrado, rombo, trapecio, cometa o circulo  ")
+
+let base;
+let altura;
+let ancho;
+let lado;
+let diagonalmayor;
+let diagonalmenor;
+let basemayor;
+let basemenor;
+let radio;
+
+switch(figura){
+    case "triangulo":
+        base = prompt("¿Cúanto tienes de base?")
+        altura = prompt("¿Cuanto tienes de altura?")
+        document.write(`El área del Triagulo es ${base*altura/2}`)
+        break
+    case "paralelogramo":
+        base = prompt("¿Cúanto tienes de base?")
+        altura = prompt("¿Cuanto tienes de altura?")
+        document.write(`El área del Paralelogramo es ${base*altura}`)
+        break
+    case "rectángulo":
+        base = prompt("¿Cúanto tienes de base?")
+        altura = prompt("¿Cuanto tienes de altura?")
+        document.write(`El área del Rectángulo es ${base*altura}`)
+        break
+    case "cuadrado":
+        lado = prompt("¿Cual es la longitud del lado?")
+        document.write(`El área del Cuadrado es ${Math.pow(lado,2)}`)
+        break
+    case "rombo":
+        diagonalmayor = prompt("¿Cuanto mide la Diagonal mayor?")
+        diagonalmenor = prompt("¿Cuanto mide la Diagonal menor?")
+        document.write(`El área del Rombo es ${diagonalmayor*diagonalmenor/2}`)
+        break
+    case "cometa":
+        diagonalmayor = prompt("¿Cuanto mide la Diagonal mayor?")
+        diagonalmenor = prompt("¿Cuanto mide la Diagonal menor?")
+        document.write(`El área del Cometa es ${diagonalmayor*diagonalmenor/2}`)
+        break
+    case "trapecio":
+        basemayor = prompt("Cuanto mide la BASE MAYOR?")
+        basemenor = prompt("¿Cuanto mide la BASE MENOR?")
+        altura = prompt("¿Cuanto mide la logitud de la ALTURA")
+        document.write(`El área del Trapecio es ${(basemayor+basemenor)*altura/2}`)
+        break
+    case "circulo":
+        radio = prompt("¿Cuanto vale el radio?")
+        document.write(`El área del Circulo es ${Math.PI*Math.pow(radio,2)}`)
+        break
+    default:
+        document.write("Esta figura no esta disponible")
+
+}
+
+
+    </script>
+    
+</body>
+</html>

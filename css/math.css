@@ -1,0 +1,30 @@
+
+h1{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(150, 60, 235);
+    border: 10px;
+    border-style: groove;
+    border-color: rgb(65, 12, 116) ;
+    
+}
+body{
+    background-image: url(https://images6.alphacoders.com/322/thumbbig-322420.webp);
+    color:rgb(34, 8, 8);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+p{
+    font-size: 40px;
+    font-family:monospace;
+    text-align:left
+}
+img{
+    border-style:dashed;
+    border-radius: 20px;
+
+}
+
+
